@@ -17,10 +17,15 @@ simple SDHLTE
         @signal[stmWorkingReceived];
         @signal[stmProtectionReceived];
         
+        @signal[loadSTM];
+        
         @statistic[stmWorkingSent](title="STM sent on working line"; source=stmWorkingSent; record=vector,last);
         @statistic[stmProtectionSent](title="STM sent on protection line"; source=stmProtectionSent; record=vector,last);
         @statistic[stmWorkingReceived](title="STM received on working line"; source=stmWorkingReceived; record=vector,last);
         @statistic[stmProtectionReceived](title="STM received on protection line"; source=stmProtectionReceived; record=vector,last);
+        
+        @statistic[loadSTM](title="Carga utilizada en cada trama STM"; source=stmProtectionReceived; record=vector,last);
+        
         
         @display("i=block/tx");
     gates:
