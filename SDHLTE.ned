@@ -24,7 +24,7 @@ simple SDHLTE
         @statistic[stmWorkingReceived](title="STM received on working line"; source=stmWorkingReceived; record=vector,last);
         @statistic[stmProtectionReceived](title="STM received on protection line"; source=stmProtectionReceived; record=vector,last);
         
-        @statistic[loadSTM](title="Carga utilizada en cada trama STM"; source=stmProtectionReceived; record=vector,last);
+        @statistic[loadSTM](title="Carga utilizada en cada trama STM"; source=loadSTM; record=vector,last);
         
         
         @display("i=block/tx");

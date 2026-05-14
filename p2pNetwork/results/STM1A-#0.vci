@@ -1,0 +1,75 @@
+file 1017934 1778751094                                         
+version 3
+run STM1A-0-20260514-11:31:30-25824
+attr configname STM1A
+attr datetime 20260514-11:31:30
+attr datetimef 20260514-113130
+attr experiment STM1A
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network p2pNetwork
+attr processid 25824
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config *.sourceA.packetInterval 120.4us
+config *.sourceA.packetSize 2340
+config *.sourceB.packetInterval 120.4us
+config *.sourceB.packetSize 2430
+config *.lteA.stmLevel 1
+config *.lteB.stmLevel 1
+config *.lteA.numTributaries 1
+config *.lteB.numTributaries 1
+config network p2pNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config **.scalar-recording true
+config **.vector-recording true
+config *.lteA.stmLevel 1
+config *.lteB.stmLevel 1
+config *.lteA.numTributaries 1
+config *.lteB.numTributaries 1
+config *.sourceA.packetInterval 50us
+config *.sourceA.packetSize 3000
+
+vector 0 p2pNetwork.lteA loadSTM:vector ETV
+attr recordingmode vector
+attr source loadSTM
+attr title "Carga utilizada en cada trama STM"
+vector 1 p2pNetwork.lteA stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 2 p2pNetwork.lteB loadSTM:vector ETV
+attr recordingmode vector
+attr source loadSTM
+attr title "Carga utilizada en cada trama STM"
+vector 3 p2pNetwork.lteB stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 4 p2pNetwork.lteB stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+vector 5 p2pNetwork.lteA stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+0	2137 151674 5 73216 0.000125 1 8000 1 1 8000 8000
+1	153811 174567 5 73216 0.000125 1 8000 1 8000 32004000 170698668000
+2	328378 151674 6 73217 0.000125 1 8000 0 0 0 0
+3	480052 174567 6 73217 0.000125 1 8000 1 8000 32004000 170698668000
+4	654619 181656 7 73209 0.000127 0.999877 7999 1 7999 31996000 170634668000
+5	836275 181657 8 73210 0.000127 0.999877 7999 1 7999 31996000 170634668000
+

@@ -33,6 +33,8 @@ class SDHLTE : public cSimpleModule {
     simsignal_t workingSignalRx;
     simsignal_t protectionSignalRx;
 
+    simsignal_t longitud;
+
   protected:
     virtual void initialize() override;
     virtual void handleMessage(cMessage *msg) override;

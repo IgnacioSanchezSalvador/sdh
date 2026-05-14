@@ -19,6 +19,8 @@ void SDHLTE::initialize() {
     protectionSignalTx = registerSignal("stmProtectionSent");
     workingSignalRx = registerSignal("stmWorkingReceived");
     protectionSignalRx = registerSignal("stmProtectionReceived");
+    longitud = registerSignal("loadSTM");
+
 
     double bitrate = 155.52e6 * stmLevel;  // STM-n velocidad
     for (int i = 0; i < gateSize("lineOut"); ++i) {
@@ -53,7 +55,7 @@ void SDHLTE::handleMessage(cMessage *msg) {
             auto *frame = new SDHFrame("STM-Frame");
             frame->setStmLevel(stmLevel);
 
-            int maxBytes = 2430 * stmLevel;
+            int maxBytes = 2340 * stmLevel;
             int usedBytes = 0;
 
             auto *vc = new SDHVirtualContainer("VC4");
@@ -95,6 +97,7 @@ void SDHLTE::handleMessage(cMessage *msg) {
 
             // Color según carga
             double loadRatio = (double)usedBytes / maxBytes;
+            emit(longitud,loadRatio);
 
             bool useProtectionNow = useProtection && (protectionSwitchTime >= 0 && simTime() >= protectionSwitchTime);
 
