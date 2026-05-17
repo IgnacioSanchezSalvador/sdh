@@ -1,0 +1,91 @@
+file 1165076 1778754164                                         
+version 3
+run Protection-0-20260514-12:22:38-23384
+attr configname Protection
+attr datetime 20260514-12:22:38
+attr datetimef 20260514-122238
+attr experiment Protection
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network p2pNetwork
+attr processid 23384
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config *.lteA.useProtection true
+config *.lteB.useProtection true
+config *.lteA.protectionSwitchTime 0.5s
+config *.lteB.protectionSwitchTime 0.5s
+config network p2pNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config **.scalar-recording true
+config **.vector-recording true
+config *.lteA.stmLevel 1
+config *.lteB.stmLevel 1
+config *.lteA.numTributaries 1
+config *.lteB.numTributaries 1
+config *.sourceA.packetInterval 50us
+config *.sourceA.packetSize 3000
+
+vector 0 p2pNetwork.lteA loadSTM:vector ETV
+attr recordingmode vector
+attr source loadSTM
+attr title "Carga utilizada en cada trama STM"
+vector 1 p2pNetwork.lteA stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 2 p2pNetwork.lteB loadSTM:vector ETV
+attr recordingmode vector
+attr source loadSTM
+attr title "Carga utilizada en cada trama STM"
+vector 3 p2pNetwork.lteB stmWorkingSent:vector ETV
+attr recordingmode vector
+attr source stmWorkingSent
+attr title "STM sent on working line"
+vector 4 p2pNetwork.lteB stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+vector 5 p2pNetwork.lteA stmWorkingReceived:vector ETV
+attr recordingmode vector
+attr source stmWorkingReceived
+attr title "STM received on working line"
+vector 6 p2pNetwork.lteA stmProtectionSent:vector ETV
+attr recordingmode vector
+attr source stmProtectionSent
+attr title "STM sent on protection line"
+vector 7 p2pNetwork.lteB stmProtectionSent:vector ETV
+attr recordingmode vector
+attr source stmProtectionSent
+attr title "STM sent on protection line"
+vector 8 p2pNetwork.lteB stmProtectionReceived:vector ETV
+attr recordingmode vector
+attr source stmProtectionReceived
+attr title "STM received on protection line"
+vector 9 p2pNetwork.lteA stmProtectionReceived:vector ETV
+attr recordingmode vector
+attr source stmProtectionReceived
+attr title "STM received on protection line"
+0	2680 158179 29 327986 0.000125 1 8000 0 0 0 0
+1	160859 88610 29 163947 0.000125 0.499875 3999 1 3999 7998000 21325334000
+2	249469 270179 30 327987 0.000125 1 8000 0.8974358974359 0.8974358974359 7179.4871794862 6443.1295200535
+3	519648 88610 30 163948 0.000125 0.499875 3999 1 3999 7998000 21325334000
+4	608258 92160 31 163949 0.000127 0.499877 3999 1 3999 7998000 21325334000
+5	700418 92160 32 163950 0.000127 0.499877 3999 1 3999 7998000 21325334000
+6	792578 91355 163986 327986 0.5 1 4001 1 4001 8006001 21357342001
+7	883933 91355 163987 327987 0.5 1 4001 1 4001 8006001 21357342001
+8	975288 94893 163992 327949 0.500002 0.999877 4000 1 4000 8002000 21341334000
+9	1070181 94893 163993 327950 0.500002 0.999877 4000 1 4000 8002000 21341334000
+

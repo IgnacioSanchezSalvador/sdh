@@ -13,6 +13,18 @@ simple SDHADM
         bool allowMixedInsertion = default(false);        
         @display("i=block/routing");
         @class(SDHADM);
+        
+        //CREAMOS LAS SEÑALES
+        @signal[STM_RE];
+        @signal[PDH_R];
+        @signal[PDH_T];
+        
+        //CREAMOS LOS ESTADÍSTICOS
+        @statistics[STM_RE](title="STM Reenviadas"; record=vector);
+        @statistics[PDH_R](title="PDH Recibidos"; record=vector);
+        @statistics[PDH_T](title="PDH Transmitidos"; record=vector);
+        
+        
     gates:
         input pdhIn[numTributaries];
         output pdhOut[numTributaries];

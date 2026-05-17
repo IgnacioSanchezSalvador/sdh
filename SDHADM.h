@@ -16,6 +16,11 @@ class SDHADM : public omnetpp::cSimpleModule
     std::vector<std::queue<omnetpp::cPacket*>> tributaryBuffers;
     cMessage *frameTimer = nullptr;
 
+    simsignal_t STM_RESignal;
+    simsignal_t PDH_RSignal;
+    simsignal_t PDH_TSignal;
+
+
     virtual void initialize() override;
     virtual void handleMessage(omnetpp::cMessage *msg) override;
     virtual void finish() override;
