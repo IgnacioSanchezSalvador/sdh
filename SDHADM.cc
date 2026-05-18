@@ -32,7 +32,7 @@ void SDHADM::initialize() {
 
 void SDHADM::handleMessage(cMessage *msg) {
     if (msg == frameTimer) {
-        int maxBytes = 2430 * stmLevel;
+        int maxBytes = 2340 * stmLevel;
         int usedBytes = 0;
 
         auto *vc = new SDHVirtualContainer("VC4");
@@ -125,7 +125,7 @@ void SDHADM::handleMessage(cMessage *msg) {
 
         // 2. (opcional) insertar datos locales
         if (allowMixedInsertion) {
-            int maxBytes = 2430 * stmLevel;
+            int maxBytes = 2340 * stmLevel;
             int usedBytes = 0;
             auto *newVC = new SDHVirtualContainer("VC4");
             newVC->setVcType(VC4);

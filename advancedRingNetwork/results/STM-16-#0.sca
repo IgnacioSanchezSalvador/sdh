@@ -1,0 +1,197 @@
+version 3
+run STM-16-0-20260518-21:27:28-22756
+attr configname STM-16
+attr datetime 20260518-21:27:28
+attr datetimef 20260518-212728
+attr experiment STM-16
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AdvancedRingNetwork
+attr processid 22756
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config **.stmLevel 16
+config *.source.packetInterval "125 us"
+config *.source.packetSize 37440
+config *.adm*.numTributaries 1
+config network AdvancedRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.animationSpeed 20
+config *.source*.packetInterval 30us
+config *.source*.packetSize 300
+config **.stmLevel 1
+config **.numTributaries 2
+
+par AdvancedRingNetwork.adm1.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm1.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm1.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm1.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm1.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm1.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm2.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm2.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm2.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm2.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm2.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm2.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm3.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm3.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm3.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm3.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm3.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm3.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm4.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm4.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm4.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm4.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm4.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm4.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm5.lineOut[0].channel typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork.FiberLine\""
+par AdvancedRingNetwork.adm5.lineOut[0].channel disabled false
+attr mutable ""
+par AdvancedRingNetwork.adm5.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par AdvancedRingNetwork.adm5.lineOut[0].channel datarate 2.48832e+09bps
+attr mutable ""
+attr unit bps
+par AdvancedRingNetwork.adm5.lineOut[0].channel ber 0
+attr mutable ""
+par AdvancedRingNetwork.adm5.lineOut[0].channel per 0
+attr mutable ""
+par AdvancedRingNetwork.adm1 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm1 stmLevel 16
+par AdvancedRingNetwork.adm1 numTributaries 1
+par AdvancedRingNetwork.adm1 allowMixedInsertion false
+scalar AdvancedRingNetwork.adm1 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar AdvancedRingNetwork.adm1 PDH_R:count 33333
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar AdvancedRingNetwork.adm1 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par AdvancedRingNetwork.adm2 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm2 stmLevel 16
+par AdvancedRingNetwork.adm2 numTributaries 1
+par AdvancedRingNetwork.adm2 allowMixedInsertion false
+scalar AdvancedRingNetwork.adm2 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar AdvancedRingNetwork.adm2 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar AdvancedRingNetwork.adm2 STM_RE:count 7999
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par AdvancedRingNetwork.adm3 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm3 stmLevel 16
+par AdvancedRingNetwork.adm3 numTributaries 1
+par AdvancedRingNetwork.adm3 allowMixedInsertion false
+scalar AdvancedRingNetwork.adm3 PDH_T:count 33329
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar AdvancedRingNetwork.adm3 PDH_R:count 66666
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar AdvancedRingNetwork.adm3 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par AdvancedRingNetwork.adm4 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm4 stmLevel 16
+par AdvancedRingNetwork.adm4 numTributaries 1
+par AdvancedRingNetwork.adm4 allowMixedInsertion false
+scalar AdvancedRingNetwork.adm4 PDH_T:count 66658
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar AdvancedRingNetwork.adm4 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar AdvancedRingNetwork.adm4 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par AdvancedRingNetwork.adm5 typename "\"inet.node.sdh.SDHADM\""
+par AdvancedRingNetwork.adm5 stmLevel 16
+par AdvancedRingNetwork.adm5 numTributaries 1
+par AdvancedRingNetwork.adm5 allowMixedInsertion false
+scalar AdvancedRingNetwork.adm5 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar AdvancedRingNetwork.adm5 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar AdvancedRingNetwork.adm5 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par AdvancedRingNetwork.source1 typename "\"inet.node.sdh.PDHSource\""
+par AdvancedRingNetwork.source1 packetInterval 3e-05s
+attr unit s
+par AdvancedRingNetwork.source1 packetSize 300
+par AdvancedRingNetwork.sink1 typename "\"inet.node.sdh.PDHSink\""
+par AdvancedRingNetwork.source31 typename "\"inet.node.sdh.PDHSource\""
+par AdvancedRingNetwork.source31 packetInterval 3e-05s
+attr unit s
+par AdvancedRingNetwork.source31 packetSize 300
+par AdvancedRingNetwork.source32 typename "\"inet.node.sdh.PDHSource\""
+par AdvancedRingNetwork.source32 packetInterval 3e-05s
+attr unit s
+par AdvancedRingNetwork.source32 packetSize 300
+par AdvancedRingNetwork.sink3 typename "\"inet.node.sdh.PDHSink\""
+par AdvancedRingNetwork.sink4 typename "\"inet.node.sdh.PDHSink\""
+par AdvancedRingNetwork typename "\"inet.node.sdh.advancedRingNetwork.AdvancedRingNetwork\""
+

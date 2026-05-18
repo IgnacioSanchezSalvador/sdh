@@ -11,7 +11,7 @@ network SimpleRingNetwork
         channel FiberLine extends ned.DatarateChannel
         {
             parameters:
-                datarate = default(155.52Mbps);
+                datarate = default(622.08Mbps);
                 delay = default(2us);
                 @display("m=arrow,ls=blue,2");
         }

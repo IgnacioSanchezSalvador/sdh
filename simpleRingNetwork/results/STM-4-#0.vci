@@ -1,0 +1,60 @@
+file 518238 1779132225                                          
+version 3
+run STM-4-0-20260518-21:23:34-21000
+attr configname STM-4
+attr datetime 20260518-21:23:34
+attr datetimef 20260518-212334
+attr experiment STM-4
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleRingNetwork
+attr processid 21000
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config **.stmLevel 4
+config *.source.packetInterval "125 us"
+config *.source.packetSize 9360
+config *.adm*.numTributaries 1
+config network SimpleRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.displayPacketDrops true
+config *.lteSource.stmLevel 1
+config *.lteSink.stmLevel 1
+config *.lteSource.useProtection false
+config *.lteSink.useProtection false
+config *.adm*.numTributaries 1
+config *.adm*.stmLevel 1
+config *.source.packetInterval 20us
+config *.source.packetSize 150
+config *.lteSource.protectionSwitchTime -1s
+config *.lteSink.protectionSwitchTime -1s
+config **.scalar-recording true
+config **.vector-recording true
+
+vector 0 SimpleRingNetwork.adm1 PDH_R:vector ETV
+attr recordingmode vector
+attr source PDH_R
+attr title "PDH Recibidos"
+vector 1 SimpleRingNetwork.adm2 STM_RE:vector ETV
+attr recordingmode vector
+attr source STM_RE
+attr title "STM Reenviadas"
+vector 2 SimpleRingNetwork.adm3 PDH_T:vector ETV
+attr recordingmode vector
+attr source PDH_T
+attr title "PDH Transmitidos"
+0	1666 198864 7 79986 0.00024737037 0.99999737037 7999 1 1 7999 7999
+1	200530 158853 14 79984 0.000252 0.999877 7998 1 1 7998 7998
+2	359383 158853 15 79985 0.000254 0.999879 7998 1 1 7998 7998
+

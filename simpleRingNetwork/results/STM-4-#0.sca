@@ -1,0 +1,221 @@
+version 3
+run STM-4-0-20260518-21:23:34-21000
+attr configname STM-4
+attr datetime 20260518-21:23:34
+attr datetimef 20260518-212334
+attr experiment STM-4
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleRingNetwork
+attr processid 21000
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config **.stmLevel 4
+config *.source.packetInterval "125 us"
+config *.source.packetSize 9360
+config *.adm*.numTributaries 1
+config network SimpleRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.animationSpeed 20
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.displayPacketDrops true
+config *.lteSource.stmLevel 1
+config *.lteSink.stmLevel 1
+config *.lteSource.useProtection false
+config *.lteSink.useProtection false
+config *.adm*.numTributaries 1
+config *.adm*.stmLevel 1
+config *.source.packetInterval 20us
+config *.source.packetSize 150
+config *.lteSource.protectionSwitchTime -1s
+config *.lteSink.protectionSwitchTime -1s
+config **.scalar-recording true
+config **.vector-recording true
+
+par SimpleRingNetwork.adm1.lineOut[0].channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.adm1.lineOut[0].channel disabled false
+attr mutable ""
+par SimpleRingNetwork.adm1.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.adm1.lineOut[0].channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.adm1.lineOut[0].channel ber 0
+attr mutable ""
+par SimpleRingNetwork.adm1.lineOut[0].channel per 0
+attr mutable ""
+par SimpleRingNetwork.adm2.lineOut[0].channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.adm2.lineOut[0].channel disabled false
+attr mutable ""
+par SimpleRingNetwork.adm2.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.adm2.lineOut[0].channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.adm2.lineOut[0].channel ber 0
+attr mutable ""
+par SimpleRingNetwork.adm2.lineOut[0].channel per 0
+attr mutable ""
+par SimpleRingNetwork.adm3.lineOut[0].channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.adm3.lineOut[0].channel disabled false
+attr mutable ""
+par SimpleRingNetwork.adm3.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.adm3.lineOut[0].channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.adm3.lineOut[0].channel ber 0
+attr mutable ""
+par SimpleRingNetwork.adm3.lineOut[0].channel per 0
+attr mutable ""
+par SimpleRingNetwork.adm4.lineOut[0].channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.adm4.lineOut[0].channel disabled false
+attr mutable ""
+par SimpleRingNetwork.adm4.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.adm4.lineOut[0].channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.adm4.lineOut[0].channel ber 0
+attr mutable ""
+par SimpleRingNetwork.adm4.lineOut[0].channel per 0
+attr mutable ""
+par SimpleRingNetwork.adm5.lineOut[0].channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.adm5.lineOut[0].channel disabled false
+attr mutable ""
+par SimpleRingNetwork.adm5.lineOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.adm5.lineOut[0].channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.adm5.lineOut[0].channel ber 0
+attr mutable ""
+par SimpleRingNetwork.adm5.lineOut[0].channel per 0
+attr mutable ""
+par SimpleRingNetwork.source.out.channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.source.out.channel disabled false
+attr mutable ""
+par SimpleRingNetwork.source.out.channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.source.out.channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.source.out.channel ber 0
+attr mutable ""
+par SimpleRingNetwork.source.out.channel per 0
+attr mutable ""
+par SimpleRingNetwork.adm3.pdhOut[0].channel typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork.FiberLine\""
+par SimpleRingNetwork.adm3.pdhOut[0].channel disabled false
+attr mutable ""
+par SimpleRingNetwork.adm3.pdhOut[0].channel delay 2e-06s
+attr mutable ""
+attr unit s
+par SimpleRingNetwork.adm3.pdhOut[0].channel datarate 6.2208e+08bps
+attr mutable ""
+attr unit bps
+par SimpleRingNetwork.adm3.pdhOut[0].channel ber 0
+attr mutable ""
+par SimpleRingNetwork.adm3.pdhOut[0].channel per 0
+attr mutable ""
+par SimpleRingNetwork.adm1 typename "\"inet.node.sdh.SDHADM\""
+par SimpleRingNetwork.adm1 stmLevel 4
+par SimpleRingNetwork.adm1 numTributaries 1
+par SimpleRingNetwork.adm1 allowMixedInsertion false
+scalar SimpleRingNetwork.adm1 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar SimpleRingNetwork.adm1 PDH_R:count 7999
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar SimpleRingNetwork.adm1 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par SimpleRingNetwork.adm2 typename "\"inet.node.sdh.SDHADM\""
+par SimpleRingNetwork.adm2 stmLevel 4
+par SimpleRingNetwork.adm2 numTributaries 1
+par SimpleRingNetwork.adm2 allowMixedInsertion false
+scalar SimpleRingNetwork.adm2 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar SimpleRingNetwork.adm2 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar SimpleRingNetwork.adm2 STM_RE:count 7998
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par SimpleRingNetwork.adm3 typename "\"inet.node.sdh.SDHADM\""
+par SimpleRingNetwork.adm3 stmLevel 4
+par SimpleRingNetwork.adm3 numTributaries 1
+par SimpleRingNetwork.adm3 allowMixedInsertion false
+scalar SimpleRingNetwork.adm3 PDH_T:count 7998
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar SimpleRingNetwork.adm3 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar SimpleRingNetwork.adm3 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par SimpleRingNetwork.adm4 typename "\"inet.node.sdh.SDHADM\""
+par SimpleRingNetwork.adm4 stmLevel 4
+par SimpleRingNetwork.adm4 numTributaries 1
+par SimpleRingNetwork.adm4 allowMixedInsertion false
+scalar SimpleRingNetwork.adm4 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar SimpleRingNetwork.adm4 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar SimpleRingNetwork.adm4 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par SimpleRingNetwork.adm5 typename "\"inet.node.sdh.SDHADM\""
+par SimpleRingNetwork.adm5 stmLevel 4
+par SimpleRingNetwork.adm5 numTributaries 1
+par SimpleRingNetwork.adm5 allowMixedInsertion false
+scalar SimpleRingNetwork.adm5 PDH_T:count 0
+attr recordingmode count
+attr source PDH_T
+attr title "PDH Transmitidos, count"
+scalar SimpleRingNetwork.adm5 PDH_R:count 0
+attr recordingmode count
+attr source PDH_R
+attr title "PDH Recibidos, count"
+scalar SimpleRingNetwork.adm5 STM_RE:count 0
+attr recordingmode count
+attr source STM_RE
+attr title "STM Reenviadas, count"
+par SimpleRingNetwork.source typename "\"inet.node.sdh.PDHSource\""
+par SimpleRingNetwork.source packetInterval 0.000125s
+attr unit s
+par SimpleRingNetwork.source packetSize 9360
+par SimpleRingNetwork.sink typename "\"inet.node.sdh.PDHSink\""
+par SimpleRingNetwork typename "\"inet.node.sdh.simpleRingNetwork.SimpleRingNetwork\""
+

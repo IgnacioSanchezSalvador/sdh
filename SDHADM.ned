@@ -14,15 +14,15 @@ simple SDHADM
         @display("i=block/routing");
         @class(SDHADM);
         
-        //CREAMOS LAS SEÑALES
+        //SIGNAL
         @signal[STM_RE];
         @signal[PDH_R];
         @signal[PDH_T];
         
-        //CREAMOS LOS ESTADÍSTICOS
-        @statistics[STM_RE](title="STM Reenviadas"; record=vector);
-        @statistics[PDH_R](title="PDH Recibidos"; record=vector);
-        @statistics[PDH_T](title="PDH Transmitidos"; record=vector);
+        //STATISTIC
+        @statistic[STM_RE](title="STM Reenviadas"; source=STM_RE; record=vector, count);
+        @statistic[PDH_R](title="PDH Recibidos"; source=PDH_R; record=vector, count);
+        @statistic[PDH_T](title="PDH Transmitidos"; source=PDH_T; record=vector, count);
         
         
     gates:

@@ -1,0 +1,68 @@
+file 4194724 1779132453                                         
+version 3
+run STM-16-0-20260518-21:27:28-22756
+attr configname STM-16
+attr datetime 20260518-21:27:28
+attr datetimef 20260518-212728
+attr experiment STM-16
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AdvancedRingNetwork
+attr processid 22756
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../images
+config **.stmLevel 16
+config *.source.packetInterval "125 us"
+config *.source.packetSize 37440
+config *.adm*.numTributaries 1
+config network AdvancedRingNetwork
+config sim-time-limit 1s
+config *.visualizer.*.enabled true
+config *.visualizer.*.displayRoutes false
+config *.visualizer.*.displayPacketDrops true
+config *.visualizer.*.displayLabels true
+config *.visualizer.*.animationSpeed 20
+config *.source*.packetInterval 30us
+config *.source*.packetSize 300
+config **.stmLevel 1
+config **.numTributaries 2
+
+vector 0 AdvancedRingNetwork.adm1 PDH_R:vector ETV
+attr recordingmode vector
+attr source PDH_R
+attr title "PDH Recibidos"
+vector 1 AdvancedRingNetwork.adm3 PDH_R:vector ETV
+attr recordingmode vector
+attr source PDH_R
+attr title "PDH Recibidos"
+vector 2 AdvancedRingNetwork.adm2 STM_RE:vector ETV
+attr recordingmode vector
+attr source STM_RE
+attr title "STM Reenviadas"
+vector 3 AdvancedRingNetwork.adm4 PDH_T:vector ETV
+attr recordingmode vector
+attr source PDH_T
+attr title "PDH Transmitidos"
+vector 4 AdvancedRingNetwork.adm3 PDH_T:vector ETV
+attr recordingmode vector
+attr source PDH_T
+attr title "PDH Transmitidos"
+1	1638 631368 5 178900 0.00003 0.49152 32768 1 1 32768 32768
+3	633006 667782 31 178934 0.000127 0.491627 32768 1 1 32768 32768
+0	1300788 641543 4 357809 0.00003 0.98304 32768 1 1 32768 32768
+1	1942331 651720 178908 357811 0.49155 0.98304 32768 1 1 32768 32768
+3	2594051 688128 178934 357837 0.491627 0.983127 32768 1 1 32768 32768
+4	3282179 677955 33 357839 0.000129 0.983129 32768 1 1 32768 32768
+0	3960134 11236 357818 363975 0.98307 0.99999 565 1 1 565 565
+1	3971370 22472 357819 363977 0.98307 0.99999 1130 1 1 1130 1130
+2	3993842 165537 30 363936 0.000127 0.999877 7999 1 1 7999 7999
+3	4159379 23562 357837 363937 0.983127 0.999877 1122 1 1 1122 1122
+4	4182941 11781 357839 363939 0.983129 0.999879 561 1 1 561 561
+
